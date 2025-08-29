@@ -1,0 +1,77 @@
+{
+  "thought_history": [
+    {
+      "number": 1,
+      "thought": "Testing new session creation",
+      "timestamp": "2025-08-28T03:37:08.638788",
+      "metadata": {
+        "thought": "Testing new session creation",
+        "thoughtNumber": 1,
+        "totalThoughts": 10,
+        "nextThoughtNeeded": true
+      },
+      "badge_id": "CH01",
+      "session_id": "test-session"
+    },
+    {
+      "number": 2,
+      "thought": "Testing the L-B-1 Sequential Thinking system. This is the first thought in a new session to verify the wrapper is working correctly.",
+      "timestamp": "2025-08-28T23:27:38.247088",
+      "metadata": {
+        "thought": "Testing the L-B-1 Sequential Thinking system. This is the first thought in a new session to verify the wrapper is working correctly.",
+        "thoughtNumber": 2,
+        "totalThoughts": 10,
+        "nextThoughtNeeded": true
+      },
+      "badge_id": "TEST1",
+      "session_id": "test-session"
+    },
+    {
+      "number": 3,
+      "thought": "The wrapper is functioning correctly. We can see session management, badge IDs, and thought persistence all working as designed.",
+      "timestamp": "2025-08-28T23:27:46.876221",
+      "metadata": {
+        "thought": "The wrapper is functioning correctly. We can see session management, badge IDs, and thought persistence all working as designed.",
+        "thoughtNumber": 3,
+        "totalThoughts": 10,
+        "nextThoughtNeeded": true
+      },
+      "badge_id": "TEST1",
+      "session_id": "test-session"
+    },
+    {
+      "number": 4,
+      "thought": "This is a multiline thought test.\nWe're verifying that the stdin flag works correctly.\nLine 3: Testing special characters like 'quotes' and \"double quotes\".\nLine 4: JSON escaping should be handled automatically.\n",
+      "timestamp": "2025-08-28T23:27:55.655021",
+      "metadata": {
+        "thought": "This is a multiline thought test.\nWe're verifying that the stdin flag works correctly.\nLine 3: Testing special characters like 'quotes' and \"double quotes\".\nLine 4: JSON escaping should be handled automatically.\n",
+        "thoughtNumber": 4,
+        "totalThoughts": 10,
+        "nextThoughtNeeded": true
+      },
+      "badge_id": "TEST2",
+      "session_id": "test-session"
+    }
+  ],
+  "branches": {},
+  "current_thought_number": 4,
+  "session_id": "test-session",
+  "created_at": "2025-08-28T03:37:08.638766",
+  "participants": {
+    "CH01": {
+      "first_seen_at": "2025-08-28T03:37:08.638783",
+      "thoughts_authored": 1,
+      "last_thought_number_seen": 1
+    },
+    "TEST1": {
+      "first_seen_at": "2025-08-28T23:27:38.247028",
+      "thoughts_authored": 2,
+      "last_thought_number_seen": 3
+    },
+    "TEST2": {
+      "first_seen_at": "2025-08-28T23:27:55.654965",
+      "thoughts_authored": 1,
+      "last_thought_number_seen": 4
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "workflow_name": "CodeReview_v1",
+  "description": "Basic Python code review workflow",
+  "version": "1.0",
+  "steps": [
+    {
+      "step": 1,
+      "action": "[SCAN_FILE]",
+      "description": "Get file metadata",
+      "on_failure": "abort"
+    },
+    {
+      "step": 2,
+      "action": "[CHECK_SYNTAX]",
+      "description": "Validate syntax first",
+      "on_failure": "continue_with_warning"
+    },
+    {
+      "step": 3,
+      "action": "[CHECK_IMPORTS]",
+      "description": "Verify imports",
+      "on_failure": "continue"
+    },
+    {
+      "step": 4,
+      "action": "[CHECK_VARIABLES]",
+      "description": "Check variable usage",
+      "on_failure": "continue"
+    },
+    {
+      "step": 5,
+      "action": "[CHECK_FUNCTIONS]",
+      "description": "Verify function definitions",
+      "on_failure": "continue"
+    }
+  ],
+  "success_criteria": {
+    "no_syntax_errors": true,
+    "no_undefined_variables": true,
+    "no_undefined_functions": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "sessions": {
+    "migrated-default": {
+      "created_at": "2025-08-27T02:43:01.206119",
+      "description": "Migrated from old state file",
+      "last_modified": "2025-08-27T04:58:53.577079",
+      "contributor_count": 3,
+      "thought_count": 18,
+      "contributors": {
+        "MB01": 14,
+        "XY02": 3,
+        "ZZ03": 1
+      }
+    },
+    "test-session": {
+      "created_at": "2025-08-28T03:37:08.638766",
+      "description": "Testing session features",
+      "last_modified": "2025-08-28T23:27:55.655527",
+      "contributor_count": 3,
+      "thought_count": 4,
+      "contributors": {
+        "CH01": 1,
+        "TEST1": 2,
+        "TEST2": 1
+      }
+    },
+    "debug-collab": {
+      "created_at": "2025-08-28T23:31:30.282526",
+      "description": "Testing multi-agent collaboration with 3 different badges",
+      "last_modified": "2025-08-28T23:32:37.978903",
+      "contributor_count": 3,
+      "thought_count": 6,
+      "contributors": {
+        "AG01": 3,
+        "AG02": 2,
+        "AG03": 1
+      }
+    }
+  },
+  "default_session": "migrated-default"
+}

@@ -1,0 +1,65 @@
+{
+  "action_items": {
+    "[SCAN_FILE]": {
+      "description": "Get basic file information",
+      "inputs": ["file_path"],
+      "outputs": {
+        "lines": "integer",
+        "language": "string",
+        "size_bytes": "integer"
+      },
+      "failure_modes": []
+    },
+    "[CHECK_IMPORTS]": {
+      "description": "Verify all imports are used and valid",
+      "inputs": ["file_path"],
+      "outputs": {
+        "missing": "array",
+        "unused": "array",
+        "invalid": "array"
+      },
+      "failure_modes": [
+        "hallucinate_import_exists",
+        "miss_dynamic_import"
+      ]
+    },
+    "[CHECK_VARIABLES]": {
+      "description": "Find undefined or unused variables",
+      "inputs": ["file_path"],
+      "outputs": {
+        "undefined": "array",
+        "unused": "array",
+        "shadowed": "array"
+      },
+      "failure_modes": [
+        "miss_undefined_in_large_context",
+        "hallucinate_variable_defined"
+      ]
+    },
+    "[CHECK_FUNCTIONS]": {
+      "description": "Verify function definitions and calls",
+      "inputs": ["file_path"],
+      "outputs": {
+        "undefined_calls": "array",
+        "unused_functions": "array",
+        "missing_returns": "array"
+      },
+      "failure_modes": [
+        "miss_nested_function_issues",
+        "hallucinate_function_exists"
+      ]
+    },
+    "[CHECK_SYNTAX]": {
+      "description": "Basic syntax validation",
+      "inputs": ["file_path"],
+      "outputs": {
+        "errors": "array",
+        "warnings": "array"
+      },
+      "failure_modes": [
+        "miss_subtle_syntax_error",
+        "false_positive_on_valid_syntax"
+      ]
+    }
+  }
+}
