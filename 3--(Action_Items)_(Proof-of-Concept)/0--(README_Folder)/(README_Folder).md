@@ -15,13 +15,6 @@ We successfully demonstrated that:
 
 ### Core Files
 
-**action_executor.py**
-The main execution engine that simulates how agents would run action items. It includes:
-- Individual action implementations (_scan_file, _check_syntax, etc.)
-- Workflow execution logic with failure handling
-- Error recording for the learning database
-- A simulation of agent failure (lines 282-287) showing how we'd catch mistakes
-
 **(Action_Items)_(Complete_Vision).md**
 The complete documentation of Chris's vision - from the core insight about LLM failures to the cross-domain transfer learning potential. This is the "why" behind everything.
 
@@ -47,6 +40,12 @@ The folders within this directory contain the core components of the Action Item
 - Contains `errors.json` recording agent failures
 - Shows simulated failure where agent missed undefined variables
 - This data drives systematic workflow improvements
+
+**5--(Action_Executor)_(Main-Script)/**
+- Contains `(Action_Executor)_(Main-Script).py` - THE MAIN DEMO SCRIPT
+- Run this to see the whole system in action
+- Executes workflows, simulates agent failures, records errors
+- This is what proves the concept actually works
 
 ## How It Works
 

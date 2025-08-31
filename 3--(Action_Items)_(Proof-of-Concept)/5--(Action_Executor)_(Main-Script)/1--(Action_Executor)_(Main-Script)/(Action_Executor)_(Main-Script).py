@@ -232,7 +232,7 @@ class ActionExecutor:
         self.error_database.append(failure)
         
         # Save to error database
-        db_file = Path("4--(Error_Database)/errors.json")
+        db_file = Path("../../4--(Error_Database)/errors.json")
         if db_file.exists():
             with open(db_file, 'r') as f:
                 db = json.load(f)
@@ -250,8 +250,9 @@ if __name__ == "__main__":
     executor = ActionExecutor()
     
     # Test the workflow on our buggy file
-    workflow_file = "2--(Workflows)/code_review_v1.json"
-    test_file = "3--(Test_Files)/buggy_code.py"
+    # Go up two levels to reach the proof of concept folder
+    workflow_file = "../../2--(Action_Item)_(Workflows)/code_review_v1.json"
+    test_file = "../../3--(Test_Files)/buggy_code.py"
     
     results = executor.execute_workflow(workflow_file, test_file)
     
